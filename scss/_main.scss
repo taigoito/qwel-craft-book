@@ -3,10 +3,13 @@
  */
 
 .main {
-  width: min(100%, 768px);
   min-height: calc(100vh - 18rem);
-  margin: 0 auto;
-  padding: 0 clamp(0.75rem, 2%, 1.5rem);
+
+  &__header {
+    width: min(100%, 768px);
+    margin: 0 auto;
+    padding: 0 clamp(0.75rem, 2%, 1.5rem);
+  }
 
   &__title {
     &::after {

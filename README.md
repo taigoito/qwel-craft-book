@@ -1,8 +1,10 @@
-# QWEL CRAFT TEMPLATE | Created by ― QWEL.DESIGN
+# Flipbook | Created by ― QWEL.DESIGN
 
-これは、[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Crafts の作品テンプレートです。
+Web絵本: フリップ・ドラグ操作で、ページをめくって読み進めることができる本。  
+リスポンシブ対応の文字サイズが課題のプロトタイプ。  
+デザインはweb上の情報を参照しました（過去作品のためURL等詳細情報を確認できませんでした）。
 
-[https://creative.qwel.design/](https://creative.qwel.design/)
+[https://qwel.design/creative/book/](https://qwel.design/creative/book/)
 
 ---
 

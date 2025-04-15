@@ -173,8 +173,10 @@ button, input, select, textarea {
  * Main
  */
 .main {
-  width: min(100%, 768px);
   min-height: calc(100vh - 18rem);
+}
+.main__header {
+  width: min(100%, 768px);
   margin: 0 auto;
   padding: 0 clamp(0.75rem, 2%, 1.5rem);
 }
@@ -271,6 +273,126 @@ button, input, select, textarea {
   padding-right: 0.75rem;
   padding-top: 2.25rem;
   padding-bottom: 3rem;
+}
+
+/**
+ * Book
+ */
+.book {
+  position: relative;
+  width: 100%;
+  height: min(96vw, 864px);
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+@media (min-width: 900px) {
+  .book {
+    height: min(48vw, 576px);
+  }
+}
+.book__pages {
+  position: absolute;
+  top: 0;
+  right: min(20vw, 180px);
+  bottom: 0;
+  z-index: 1;
+  width: min(120vw, 1080px);
+  height: min(84vw, 756px);
+  margin: auto;
+  background-color: #e0e0e0;
+}
+@media (min-width: 900px) {
+  .book__pages {
+    right: calc(50% - min(15vw, 180px));
+    width: min(60vw, 720px);
+    height: min(42vw, 504px);
+  }
+}
+.book__page {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.book__content {
+  position: relative;
+  width: min(60vw, 540px);
+  height: 100%;
+  padding: min(7.5vw, 67.5px) min(5vw, 45px);
+  background-color: #ffffff;
+}
+@media (min-width: 900px) {
+  .book__content {
+    width: min(30vw, 360px);
+    padding: min(3.75vw, 45px) min(2.5vw, 30px);
+  }
+}
+.book__content h3 {
+  font-size: min(3.75vw, 16.875px);
+}
+.book__content p {
+  margin: 0;
+  font-size: min(1.875vw, 8.4375px);
+}
+.book__pageNum {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: min(2.5vw, 30px);
+  margin: auto;
+  text-align: center;
+}
+.book__canvas {
+  position: absolute;
+  top: 0;
+  right: min(17vw, 153px);
+  z-index: 100;
+  width: min(126vw, 1134px);
+  height: 100%;
+}
+@media (min-width: 900px) {
+  .book__canvas {
+    right: calc(50% - min(16.5vw, 198px));
+    width: min(63vw, 756px);
+  }
+}
+.book__prev, .book__next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 110;
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: #209fdf;
+  text-align: center;
+  outline: 0;
+  cursor: pointer;
+}
+.book__prev:hover, .book__next:hover {
+  color: #79c6ec;
+}
+.book__prev {
+  left: min(5vw, 45px);
+}
+@media (min-width: 900px) {
+  .book__prev {
+    left: 330px;
+  }
+}
+.book__next {
+  right: min(5vw, 45px);
+}
+@media (min-width: 900px) {
+  .book__next {
+    right: 330px;
+  }
 }
 
 /**
